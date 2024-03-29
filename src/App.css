@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0px 120px;
+
+}
+
+.store__header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+span.material-icons {
+    cursor: pointer;
+}
+
+.cards-view {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(200px, 400px));
+    gap: 36px;
+}
+
+.shop-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shop-card__img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.shop-item__img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.shop-card__heading,
+.shop-item__heading {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.shop-item__heading {
+    margin: 0;
+}
+
+.shop-card__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-card__price,
+.shop-item__price {
+    color: red;
+    font-size: 24px;
+}
+
+.shop-card__btn,
+.shop-item__btn {
+    padding: 12px 24px;
+    border: 1px solid red;
+    border-radius: 24px;
+    font-weight: 900;
+    color: red;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
+
+.shop-card__btn:hover,
+.shop-item__btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.list-view {
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.shop-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 0px 12px;
+}
